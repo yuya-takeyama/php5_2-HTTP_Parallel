@@ -1,10 +1,10 @@
 <?php
 /**
- * Http_Parallel_Response
+ * HTTP_Parallel_Response
  *
  * HTTP レスポンス.
  */
-class Http_Parallel_Response
+class HTTP_Parallel_Response
 {
     /**
      * Constructor.
@@ -19,7 +19,7 @@ class Http_Parallel_Response
      * curl リソースからオブジェクトを生成する.
      *
      * @param  resource
-     * @return Http_Parallel_Response
+     * @return HTTP_Parallel_Response
      */
     public static function create($curl)
     {

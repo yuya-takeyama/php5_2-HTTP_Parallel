@@ -1,4 +1,4 @@
-Http_Parallel
+HTTP_Parallel
 =============
 
 これは何 ?
@@ -10,7 +10,7 @@ curl\_* 及び curl_multi\_* 系関数のラッパーとして実装されてい
 使用例
 ------
 
-    require_once 'Http/Parallel.php';
+    require_once 'HTTP/Parallel.php';
 
     $urls = array(
         'http://example.com/',
@@ -18,7 +18,7 @@ curl\_* 及び curl_multi\_* 系関数のラッパーとして実装されてい
         'http://example.org/',
     );
 
-    $http = new Http_Parallel;
+    $http = new HTTP_Parallel;
     $reqs = $http->createRequestGroup();
 
     foreach ($urls as $url) {

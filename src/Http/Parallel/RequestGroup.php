@@ -3,11 +3,11 @@ require_once dirname(__FILE__) . '/Response.php';
 require_once dirname(__FILE__) . '/ResponseGroup.php';
 
 /**
- * Http_Parallel_RequestGroup
+ * HTTP_Parallel_RequestGroup
  *
  * HTTP リクエストをグループ化し, 並列してリクエストを行う.
  */
-class Http_Parallel_RequestGroup
+class HTTP_Parallel_RequestGroup
 {
     /**
      * curl_multi_* リソース.
@@ -68,9 +68,9 @@ class Http_Parallel_RequestGroup
             curl_multi_exec($this->_curlMulti, $running);
         } while ($running);
 
-        $responses = new Http_Parallel_ResponseGroup;
+        $responses = new HTTP_Parallel_ResponseGroup;
         foreach ($this->_curls as $curl) {
-            $responses[] = Http_Parallel_Response::create($curl);
+            $responses[] = HTTP_Parallel_Response::create($curl);
         }
         return $responses;
     }

@@ -35,4 +35,5 @@ curl_* 及び curl_multi_* 系関数のラッパーとして実装されてい�
 ----
 
 Yuya Takeyama (@yuya_takeyama)
+
 http://yuyat.jp/
